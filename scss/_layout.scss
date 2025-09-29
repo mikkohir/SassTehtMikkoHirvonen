@@ -1,0 +1,57 @@
+
+html {
+    @include default-stuff;
+    @include media-queries;
+}
+
+.btn.btn-secondary, .link, .nav-link {
+    @include button-stuff
+}
+
+header, footer, section, .container-grid {
+    @include flex-center;
+}
+
+.site-header {
+    margin-top: 4rem;
+    .main-nav {
+        display:flex;
+        color: $button-color;
+        margin-bottom: 1rem;
+        .nav-link {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem; 
+        }
+    }
+}
+
+.hero {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.container-grid {
+    flex-direction: column;
+    margin-bottom: 3rem;
+    .card {
+        width: 300px;
+        border: 2px solid $bordercolor;
+        border-radius: 5px;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    .sidebar {
+        margin-top: 3rem;
+        border: 2px solid $bordercolor;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+    
+}
+
+.site-footer {
+    display:flex;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+}
